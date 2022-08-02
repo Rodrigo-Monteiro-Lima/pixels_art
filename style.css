@@ -15,8 +15,8 @@ body {
 }
 
 #pixel-board {
-  height: 200px;
-  width: 200px;
+  height: auto;
+  width: auto;
   margin-top: 10px;
   display: flex;
   flex-direction:column;
