@@ -13,3 +13,15 @@ body {
   height: 40px;
   margin-right: 10px;
 }
+
+#pixel-board {
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction:column;
+}
+
+.pixel {
+  background-color: white;
+}
