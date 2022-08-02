@@ -59,7 +59,9 @@ btnGenBoard.addEventListener('click', function() {
       lines[index2].remove();
     };
 
-    let num = parseInt(numOfPixel);         
+    let num = parseInt(numOfPixel);
+    //console.log(num, typeof(num));
+    num = sizeLimits(num);      
     for (let index3 = 0; index3 < num; index3 += 1) {
       let divLine = document.createElement('div');
       divLine.className = 'line';
@@ -72,6 +74,17 @@ btnGenBoard.addEventListener('click', function() {
     }
   }
 });
+
+function sizeLimits(num) {
+  if (num < 5) {
+    num = 5;
+  } else if (num > 50) {
+    num = 50;  
+  } else {
+    num = num;
+  }
+  return num;
+};
 
 function generateColors() {
   redColor.style.backgroundColor = 'rgb(' + Math.random()*255 + ',' + Math.random()*255 + ',' +Math.random()*255 + ')';
