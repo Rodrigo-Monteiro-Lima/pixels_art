@@ -34,7 +34,7 @@ board.addEventListener('click', (event) => {
 let btnClear = document.querySelector('#clear-board');
 let pixelBox = document.querySelectorAll('.pixel');
 let primaryColor = 'white';
-let input = document.querySelector('#board.size');
+//let input = document.querySelector('#board.size');
 btnClear.addEventListener('click', function() {
   for (let index = 0; index < pixelBox.length; index += 1) {
     if (pixelBox[index].style.backgroundColor !== primaryColor) {
@@ -52,14 +52,14 @@ btnGenBoard.addEventListener('click', function() {
   if (numOfPixel === '') {
     alert('Board inválido!')
   } else {
-    let num = parseInt(numOfPixel);
     for (let index = 0; index < pixels.length; index += 1){
       pixels[index].remove();
     }
     for (let index2 = 0; index2 < lines.length; index2 += 1) {
       lines[index2].remove();
-    };  
-      
+    };
+
+    let num = parseInt(numOfPixel);         
     for (let index3 = 0; index3 < num; index3 += 1) {
       let divLine = document.createElement('div');
       divLine.className = 'line';
@@ -72,3 +72,13 @@ btnGenBoard.addEventListener('click', function() {
     }
   }
 });
+
+function generateColors() {
+  redColor.style.backgroundColor = 'rgb(' + Math.random()*255 + ',' + Math.random()*255 + ',' +Math.random()*255 + ')';
+  blueColor.style.backgroundColor = 'rgb(' + Math.random()*255 + ',' + Math.random()*255 + ',' +Math.random()*255 + ')';
+  greenColor.style.backgroundColor = 'rgb(' + Math.random()*255 + ',' + Math.random()*255 + ',' +Math.random()*255 + ')';
+  
+}
+window.onload = function() {
+  generateColors();
+};
