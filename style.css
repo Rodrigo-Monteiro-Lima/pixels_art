@@ -1,5 +1,13 @@
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
 }
 #color-palette {
   margin-left: 0;
@@ -12,6 +20,15 @@ body {
   width: 40px;
   height: 40px;
   margin-right: 10px;
+}
+
+#clear-board {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+#board-size {
+  width: 40px;
 }
 
 #pixel-board {
@@ -35,4 +52,20 @@ body {
   width: 40px;
   min-width: 40px;
   min-height: 40px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  height: 20px;
+  margin-left: 10px;
+}
+
+#generate-board {
+  height: 26px;
+  width: 45px;
+  margin-left: 5px;
 }
