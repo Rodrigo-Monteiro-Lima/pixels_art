@@ -30,3 +30,14 @@ board.addEventListener('click', (event) => {
     }
   }
 });
+
+let btnClear = document.querySelector('#clear-board');
+let pixelBox = document.querySelectorAll('.pixel');
+let primaryColor = 'white';
+btnClear.addEventListener('click', function() {
+  for (let index = 0; index < pixelBox.length; index += 1) {
+    if (pixelBox[index].style.backgroundColor !== primaryColor) {
+      pixelBox[index].style.backgroundColor = primaryColor;
+    }  
+  }
+});
