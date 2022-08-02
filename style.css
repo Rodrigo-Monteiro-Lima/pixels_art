@@ -22,6 +22,17 @@ body {
   flex-direction:column;
 }
 
+.line {
+  display: flex;
+  width: auto;
+  height: 40px;  
+}
+
 .pixel {
   background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  min-height: 40px;
 }
