@@ -69,3 +69,7 @@ input {
   width: 45px;
   margin-left: 5px;
 }
+
+h1, p {
+  color: black;
+}
