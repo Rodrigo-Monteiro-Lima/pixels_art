@@ -8,7 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-image: url('src/image/jbCNvTM4gwr2qV8X8fW3ZB-1200-80.png');
+  background-image: url('src/image/9bc27292880429.5e569ff84e4d0.gif');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -25,6 +25,7 @@ body {
   height: 40px;
   margin-right: 10px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .color:hover {
@@ -35,8 +36,10 @@ body {
   margin-top: 0;
   margin-left: 0;
   padding: 5px;
-  background-color: rgb(255, 30, 30);
-  border: 0;
+  background-color: #d24dff;
+  border: 2px;
+  width: 80px;
+  color: white;
 }
 
 #board-size {
@@ -70,13 +73,6 @@ body {
 .text {
   display: flex;
   align-items: center;
-  background: linear-gradient(50deg, rgba(255, 255, 255, 0.4)
-  12%, rgba(255, 255, 255, 0.1) 77%);
-  box-shadow: 0 4px 24px 1px rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(5px);
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
 }
 
 input {
@@ -85,11 +81,11 @@ input {
 }
 
 #generate-board {
-  height: 26px;
+  height: 23px;
   width: 45px;
   margin-left: 5px;
-  border: 0;
-  background-color: rgb(39, 172, 39);
+  border: 2px;
+  background-color: #00d6ff;
 }
 
 h1 , p {
@@ -102,27 +98,31 @@ h1 , p {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  min-height: 565px;
+  min-height: 555px;
   max-height: fit-content;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 header {
-  background-color: rgb(175, 94, 91);
+  background-color:rgb(102,0,107);
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   font-size: 35px;
   margin-bottom: 15px;
   margin-top: 15px;
+  color: white;
+  font-family: 'Rubik';
 }
 
 p {
   color: white;
-  text-shadow: 2px 2px black;
-  font-size: 20px;
+  font-size: 17px;
+  font-family: 'Rubik';
 }
 
 button {
@@ -132,4 +132,25 @@ button {
 
 button:hover {
   filter: brightness(60%);
+}
+
+#container {
+  background: linear-gradient(50deg, rgba(255, 255, 255, 0.3)
+  12%, rgba(255, 255, 255, 0.3) 77%);
+  box-shadow: 0 4px 24px 1px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(5px);
+  margin: 10px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 80px;
+  height: 80px;
 }
