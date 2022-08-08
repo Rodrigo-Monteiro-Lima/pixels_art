@@ -104,7 +104,7 @@ h1 , p {
 }
 
 header {
-  background-color:rgb(102,0,107);
+  background-color: rgb(102, 0, 107);
   width: 100%;
   text-align: center;
   display: flex;
@@ -116,13 +116,13 @@ h1 {
   margin-bottom: 15px;
   margin-top: 15px;
   color: white;
-  font-family: 'Rubik';
+  font-family: Rubik, sans-serif;
 }
 
 p {
   color: white;
   font-size: 17px;
-  font-family: 'Rubik';
+  font-family: Rubik, sans-serif;
 }
 
 button {
