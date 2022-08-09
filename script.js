@@ -34,9 +34,9 @@ board.addEventListener('click', (event) => {
 });
 
 const btnClear = document.querySelector('#clear-board');
-const pixelBox = document.querySelectorAll('.pixel');
 const primaryColor = 'white';
 btnClear.addEventListener('click', () => {
+  const pixelBox = document.querySelectorAll('.pixel');
   for (let index = 0; index < pixelBox.length; index += 1) {
     if (pixelBox[index].style.backgroundColor !== primaryColor) {
       pixelBox[index].style.backgroundColor = primaryColor;
